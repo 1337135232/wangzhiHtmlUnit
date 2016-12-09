@@ -1,0 +1,3 @@
+NutritionFacts相关类有多个属性，其中有2个必要属性以及多个非必要属性，现在要为NutritionFacts类设计构造方法。NutritionFacts类是最普通的构造方式，重叠构造器，是框架中比较常用的方式
+NutritionFacts2使用的是set方法做的参数的实例化。
+NutritionFacts3使用的是Builder模式，不足之处在于为了创建对象，必须先创建它的构建器Builder，可能会对性能造成一定影响。好处在于如果类有多个属性，并且需要构建多个构造器的时候，使用Builder模式是不错的选择。
