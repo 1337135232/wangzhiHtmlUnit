@@ -1,6 +1,7 @@
 package com.wangzhi;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.HashMap;
 
 import org.apache.http.ParseException;
@@ -8,7 +9,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
 
-public class DingDing {
+public class DingDing implements Serializable{
 	private static long sleep_time_per_page = 3000;
 	private static int errorCount = 2;
 	private static String code = "utf-8";

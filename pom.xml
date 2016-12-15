@@ -76,7 +76,7 @@
 		</dependency>
 		
 				<!--添加的webmagic的jar包 -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>us.codecraft</groupId>
 			<artifactId>webmagic-core</artifactId>
 			<version>0.5.4-SNAPSHOT</version>
@@ -96,7 +96,7 @@
 			<groupId>us.codecraft</groupId>
 			<artifactId>webmagic-selenium</artifactId>
 			<version>0.5.4-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
