@@ -28,6 +28,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
@@ -876,8 +877,10 @@ public class UrlRequest {
 		return field2;
 	}
 	
-	public static void main(String[] args) throws SQLException {
-		System.out.println(fieldHandle(" as78王$%:~",""));
+	public static void main(String[] args) throws Exception {
+//		System.out.println(fieldHandle(" as78王$%:~",""));
+		String captureUrl = "http://ruixuesoftprivatefiles.oss-cn-beijing.aliyuncs.com/b59053c49a69404b89578a626be71536/9233d8bc-aeaa-4f75-ad1a-125a144bcf3c.png?Expires=1489578276&OSSAccessKeyId=1Mq5RScP2vBwHO6A&Signature=Y1soRpEyUrWZZEWPh5XIhoO29bU%3D";
+		System.out.println(getCaptureContent(HttpClients.createDefault(), captureUrl, ""));
 	}
 	
 	/**
